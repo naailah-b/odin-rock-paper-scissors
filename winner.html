@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>winner</title>
+    <style>
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px; 
+            font-family: Arial, Helvetica, sans-serif;
+            height: 90vh;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">go back</a>
+    <div id="winner">win</div>
+    <script>
+        let player = localStorage.getItem('player');
+        let computer = localStorage.getItem('computer');
+
+        if(computer > player) {
+            document.querySelector('#winner').textContent = "the computer won :(";
+        }
+        else if (player > computer) {
+            document.querySelector('#winner').textContent = "you won! :)";
+        }
+        else {
+            document.querySelector('#winner').textContent = "its a tie :|";
+        }
+    </script>
+</body>
+</html>

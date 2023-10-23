@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Console Rock Paper Scissors</title>
-        <meta charset="UTF-8">
-    </head>
-    <body>
+
+<head>
+    <title>Console Rock Paper Scissors</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="title">ROCK PAPER SCISSOR SHOOT</div>
+    <div class="container">
+
+        <div id="result"></div>
+
+        <div class="imgs">
+            <img src="images/rock.jpg" id="imgRock" alt="a nice looking rock">
+            <img src="images/paper.jpg" id="imgPaper" alt="a beautiful piece of paper">
+            <img src="images/scissors.jpg" id="imgScissors" alt="scissors">
+        </div>
+
+        <div class="wins">
+            <div>player wins: </div>
+            <div id="playerWins"></div>
+            <div>computer wins: </div>
+            <div id="compWins"> </div>
+        </div>
+    </div>
+
     <script src="rps.js"></script>
-    </body>
+</body>
+
 </html>
